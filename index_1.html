@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Remnant · Factory Navigator</title>
+<title>Remnant | مرشد المسار الافتراضي</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -256,7 +256,7 @@ nav {
 .gfill { fill: none; stroke: var(--cyan); stroke-width: 4; stroke-linecap: round; transition: stroke-dashoffset 1.5s cubic-bezier(.4,0,.2,1); }
 .glbl { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .gn { font-family: 'Instrument Serif', serif; font-size: 1.45rem; color: var(--cyan); line-height: 1; }
-.gu { font-family: 'JetBrains Mono', monospace; font-size: .58rem; color: var(--slate); margin-top: .1rem; }
+.gu { font-family: 'Syne', sans-serif; font-size: .58rem; color: var(--slate); margin-top: .1rem; }
 .sinfo { flex: 1; }
 .sinfo h3 { font-family: 'Instrument Serif', serif; font-size: 1.45rem; color: #fff; margin-bottom: .35rem; }
 .sinfo p { font-size: .85rem; color: var(--ghost); line-height: 1.65; }
@@ -265,7 +265,7 @@ nav {
   border-radius: 8px; padding: .55rem 1rem; flex-shrink: 0; text-align: center;
 }
 .stag .stn { font-family: 'Instrument Serif', serif; font-size: 1.55rem; color: var(--cyan); }
-.stag .stl { font-family: 'JetBrains Mono', monospace; font-size: .58rem; color: var(--slate); text-transform: uppercase; letter-spacing: .1em; }
+.stag .stl { font-family: 'Syne', sans-serif; font-size: .58rem; color: var(--slate); text-transform: uppercase; letter-spacing: .1em; }
 
 /* paths */
 .pgrid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-bottom: 1.7rem; }
@@ -281,7 +281,7 @@ nav {
 .pcpct { font-size: 1.75rem; font-weight: 700; line-height: 1; margin-bottom: .55rem; }
 .pczone { font-family: 'Syne', sans-serif; font-size: .72rem; color: var(--slate); margin-bottom: .9rem; line-height: 1.5; }
 .pctags { display: flex; flex-wrap: wrap; gap: .35rem; }
-.pctag { font-family: 'JetBrains Mono', monospace; font-size: .6rem; padding: .18rem .5rem; border-radius: 3px; font-weight: 500; }
+.pctag { font-family: 'Syne', sans-serif; font-size: .6rem; padding: .18rem .5rem; border-radius: 3px; font-weight: 500; }
 
 /* journey */
 .slbl { font-family: 'Syne', sans-serif; font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--slate); margin-bottom: .9rem; }
@@ -354,7 +354,7 @@ nav {
     <span class="logo-name">Remnant<b>.</b></span>
   </a>
   <div class="nav-r">
-    <span class="nav-pill">CHALLENGE 01 / VIRTUAL FACTORY</span>
+    <span class="nav-pill">التحدي الأول | Virtual Factory </span>
     <div class="pulse-dot"></div>
   </div>
 </nav>
@@ -363,14 +363,14 @@ nav {
 <section class="screen active" id="screen-hero">
   <div class="h-grid">
     <div>
-      <div class="h-kicker fu d1">Ministry of Industry and Mineral Resources / Open Innovation 2026</div>
+      <div class="h-kicker fu d1"> هاكاثون وزارة الصناعة والثروة المعدنية | الابتكار المفتوح 2026</div>
       <h1 class="h-title fu d2">
         Find your <em>ideal</em><br>
         industrial<br>
         <span class="v">path.</span>
       </h1>
       <p class="h-body fu d3">
-        Answer five questions. Remnant's AI matches your profile to the right sector, zone, and incentives before a single form is filed.
+        Answer 5 questions. Remnant's AI matches your profile to the right sector, zone, and incentives before a single form is filed.
       </p>
       <button class="btn-go fu d4" onclick="startQuiz()">
         Start the Navigator
@@ -398,7 +398,7 @@ nav {
 <section class="screen" id="screen-quiz">
   <div class="qwrap">
     <div class="qhdr">
-      <span class="qstep" id="qstep">STEP 01 / 05</span>
+      <span class="qstep" id="qstep">Step 1 / 5</span>
       <span class="qpct"  id="qpct">20%</span>
     </div>
     <div class="qtrack"><div class="qbar" id="qbar" style="width:20%"></div></div>
@@ -540,8 +540,7 @@ nav {
 
     <div class="rcta fu" style="animation-delay:.5s;opacity:0">
       <div>
-        <h3>Ready to go further?</h3>
-        <p>Connect with Remnant's full platform to add predictive maintenance to your future facility. Know what is left. Act before it is gone.</p>
+        <p>Know what is left. Act before it is gone.</p>
       </div>
       <div class="ctabtns">
         <button class="btn-go" onclick="goHome()" style="padding:.72rem 1.5rem">
@@ -553,7 +552,7 @@ nav {
       </div>
     </div>
 
-    <div class="ftag">Powered by <b>Remnant</b> / AI-powered industrial intelligence / Know what is left. Act before it is gone.</div>
+    <div class="ftag">Powered by <b>Remnant</b></div>
   </div>
 </section>
 
@@ -586,7 +585,7 @@ resize(); window.addEventListener('resize', resize);
 // DATA
 const Qs = [
   { id:'budget', text:'What is your estimated investment budget?', hint:'This helps match you to the right scale of industrial operation.',
-    opts:[{l:'Under SAR 1M',s:'Early-stage or pilot',v:'small'},{l:'SAR 1M to 10M',s:'Small industrial facility',v:'medium'},{l:'SAR 10M to 100M',s:'Mid-size operation',v:'large'},{l:'Over SAR 100M',s:'Large-scale investment',v:'xlarge'}] },
+    opts:[{l:'Under SAR 1M',s:'Early-stage or pilot',v:'small'},{l:'1M to 10M SAR',s:'Small industrial facility',v:'medium'},{l:'10M to 100M SAR',s:'Mid-size operation',v:'large'},{l:'Over 100M SAR',s:'Large-scale investment',v:'xlarge'}] },
   { id:'sector', text:'Which sector interests you most?', hint:'We narrow this down further based on your other answers.',
     opts:[{l:'Food and Beverage',s:'Processing, packaging, production',v:'food'},{l:'Metals and Machinery',s:'Fabrication, equipment, parts',v:'metals'},{l:'Pharma and Chemicals',s:'Manufacturing and formulation',v:'pharma'},{l:'Plastics and Packaging',s:'Consumer and industrial goods',v:'plastics'}] },
   { id:'region', text:'Where do you prefer to operate in Saudi Arabia?', hint:'Each region offers different zone options and incentives.',
@@ -600,7 +599,7 @@ const Qs = [
 const SEC = {
   food:    {name:'Food Processing',       color:'#0CF2D0', zones:['Riyadh Industrial City','KAEC Jeddah','Dammam Industrial'],      tags:['Low barriers','High demand','Vision 2030']},
   metals:  {name:'Metals and Fabrication',color:'#C8FF00', zones:['Jubail Industrial City','Ras Al-Khair','Riyadh 2nd Industrial'],   tags:['ARAMCO supply chain','Export ready','High margins']},
-  pharma:  {name:'Pharma Manufacturing',  color:'#A78BFA', zones:['King Abdullah Economic City','Riyadh Pharma Zone'],               tags:['Govt incentives','High growth','Licensing priority']},
+  pharma:  {name:'Pharma Manufacturing',  color:'#A78BFA', zones:['King Abdullah Economic City','Riyadh Pharma Zone'],               tags:['Government incentives','High growth','Licensing priority']},
   plastics:{name:'Plastics and Packaging',color:'#FB923C', zones:['Riyadh Industrial City','Jeddah 3rd Industrial'],                  tags:['Large domestic market','Easy licensing','SME friendly']},
 };
 
@@ -618,7 +617,7 @@ function renderQ() {
   const q = Qs[step];
   const pct = Math.round(((step+1)/Qs.length)*100);
   document.getElementById('qbar').style.width  = pct+'%';
-  document.getElementById('qstep').textContent = 'STEP 0'+(step+1)+' / 0'+Qs.length;
+  document.getElementById('qstep').textContent = 'Step'+(step+1)+Qs.length;
   document.getElementById('qpct').textContent  = pct+'%';
   document.getElementById('bbk').style.visibility = step===0?'hidden':'visible';
   document.getElementById('qcard').innerHTML = `
@@ -669,8 +668,8 @@ async function runLoad() {
 }
 
 async function buildResults() {
-  const budgetMap   = { small:'under SAR 1M', medium:'SAR 1M to 10M', large:'SAR 10M to 100M', xlarge:'over SAR 100M' };
-  const regionMap   = { riyadh:'Riyadh Region', eastern:'Eastern Province', makkah:'Makkah and Jeddah', open:'flexible / open to suggestions' };
+  const budgetMap   = { small:'under 1M SAR', medium:'1M to 10M SAR', large:'10M to 100M SAR', xlarge:'over 100M SAR' };
+  const regionMap   = { riyadh:'Riyadh Region', eastern:'Eastern Province', makkah:'Makkah and Jeddah', open:'flexible - open to suggestions' };
   const expMap      = { none:'first-time investor with no prior experience', some:'some experience managing 1-2 projects', expert:'experienced operator with active facilities' };
   const timelineMap = { fast:'under 1 year', medium:'1 to 3 years', long:'3 to 5 years' };
   const sectorMap   = { food:'Food and Beverage', metals:'Metals and Machinery', pharma:'Pharma and Chemicals', plastics:'Plastics and Packaging' };
@@ -688,7 +687,7 @@ async function buildResults() {
 An investor has submitted the following profile:
 ${profile}
 
-Based on this profile, return a JSON object with exactly this structure — no markdown, no extra text, just raw JSON:
+Based on this profile, return a JSON object with exactly this structure, no markdown, no extra text, just raw JSON:
 
 {
   "summary": "One sentence explaining why this investor's top match fits them specifically.",

@@ -435,7 +435,7 @@ nav {
       </div>
     </div>
     <div class="ltitle">Analyzing your profile</div>
-    <div class="lsub">// running sector_match() across 200+ profiles</div>
+    <div class="lsub"> running sector_match() across 200+ profiles</div>
     <div class="lsteps">
       <div class="ls" id="ls1"><div class="ldot"></div><span class="ltxt">scoring sector compatibility matrix</span></div>
       <div class="ls" id="ls2"><div class="ldot"></div><span class="ltxt">mapping optimal industrial zones</span></div>
@@ -618,7 +618,7 @@ function renderQ() {
   document.getElementById('qpct').textContent  = pct+'%';
   document.getElementById('bbk').style.visibility = step===0?'hidden':'visible';
   document.getElementById('qcard').innerHTML = `
-    <div class="qnum">// question_${String(step+1).padStart(2,'0')}</div>
+    <div class="qnum"> question ${String(step+1).padStart(2,'0')}</div>
     <div class="qtxt">${q.text}</div>
     <div class="qhint">${q.hint}</div>
     <div class="opts">

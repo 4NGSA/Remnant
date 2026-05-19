@@ -489,11 +489,11 @@ nav {
     <div class="fu d4">
       <div class="slbl">Your step-by-step journey</div>
       <div class="journey">
-        <div class="jstep"><div class="jn">01</div><div class="jtitle">Product Selection</div><div class="jdesc">Confirm your sector and product match from this report</div></div>
-        <div class="jstep"><div class="jn">02</div><div class="jtitle">Zone Registration</div><div class="jdesc">Register on the industrial platform (Sina'ee)</div></div>
-        <div class="jstep"><div class="jn">03</div><div class="jtitle">Licensing</div><div class="jdesc">Apply for industrial license via the Ministry portal</div></div>
-        <div class="jstep"><div class="jn">04</div><div class="jtitle">Land Allocation</div><div class="jdesc">Submit zone application with your business plan</div></div>
-        <div class="jstep"><div class="jn">05</div><div class="jtitle">Launch</div><div class="jdesc">Begin operations. Remnant monitors your assets.</div></div>
+        <div class="jstep"><div class="jn">1</div><div class="jtitle">Product Selection</div><div class="jdesc">Confirm your sector and product match from this report</div></div>
+        <div class="jstep"><div class="jn">2</div><div class="jtitle">Zone Registration</div><div class="jdesc">Register on the industrial platform (Sina'ee)</div></div>
+        <div class="jstep"><div class="jn">3</div><div class="jtitle">Licensing</div><div class="jdesc">Apply for industrial license via the Ministry portal</div></div>
+        <div class="jstep"><div class="jn">4</div><div class="jtitle">Land Allocation</div><div class="jdesc">Submit zone application with your business plan</div></div>
+        <div class="jstep"><div class="jn">5</div><div class="jtitle">Launch</div><div class="jdesc">Begin operations. Remnant monitors your assets.</div></div>
       </div>
     </div>
 
@@ -768,9 +768,9 @@ function buildResultsFallback() {
   const result = {
     summary: 'Your profile aligns strongly with this sector based on your budget, region, and timeline.',
     paths: [
-      { rank:'01', rankLabel:'Best Match',   name:p0.name,           match:87, zone:p0.zones[0],           tags:p0.tags,           color:p0.color },
-      { rank:'02', rankLabel:'Strong Match', name:SEC[rest[0]].name, match:64, zone:SEC[rest[0]].zones[0], tags:SEC[rest[0]].tags, color:SEC[rest[0]].color },
-      { rank:'03', rankLabel:'Consider',     name:SEC[rest[1]].name, match:41, zone:SEC[rest[1]].zones[0], tags:SEC[rest[1]].tags, color:SEC[rest[1]].color },
+      { rank:'1', rankLabel:'Best Match',   name:p0.name,           match:87, zone:p0.zones[0],           tags:p0.tags,           color:p0.color },
+      { rank:'2', rankLabel:'Strong Match', name:SEC[rest[0]].name, match:64, zone:SEC[rest[0]].zones[0], tags:SEC[rest[0]].tags, color:SEC[rest[0]].color },
+      { rank:'3', rankLabel:'Consider',     name:SEC[rest[1]].name, match:41, zone:SEC[rest[1]].zones[0], tags:SEC[rest[1]].tags, color:SEC[rest[1]].color },
     ],
     incentives: [
       { title:'Industrial Loan Program',   desc:'SIDF financing up to 75% of project cost at preferential rates for qualified sectors.' },
@@ -779,11 +779,11 @@ function buildResultsFallback() {
       { title:'Workforce Development',     desc:'HRDF co-funding programs for Saudization and technical training in your sector.' },
     ],
     journey: [
-      { n:'01', title:'Product Selection',  desc:'Confirm your sector and product match from this report.' },
-      { n:'02', title:'Zone Registration',  desc:"Register on the industrial platform (Sina'ee)." },
-      { n:'03', title:'Licensing',          desc:'Apply for industrial license via the Ministry portal.' },
-      { n:'04', title:'Land Allocation',    desc:'Submit zone application with your business plan.' },
-      { n:'05', title:'Launch',             desc:'Begin operations. Remnant monitors your assets.' },
+      { n:'1', title:'Product Selection',  desc:'Confirm your sector and product match from this report.' },
+      { n:'2', title:'Zone Registration',  desc:"Register on the industrial platform (Sina'ee)." },
+      { n:'3', title:'Licensing',          desc:'Apply for industrial license via the Ministry portal.' },
+      { n:'4', title:'Land Allocation',    desc:'Submit zone application with your business plan.' },
+      { n:'5', title:'Launch',             desc:'Begin operations. Remnant monitors your assets.' },
     ]
   };
   renderResults(result);

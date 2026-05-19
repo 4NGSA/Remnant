@@ -52,7 +52,7 @@ nav {
 .logo-name b { color: var(--cyan); font-weight: 800; }
 .nav-r { display: flex; align-items: center; gap: 1.2rem; }
 .nav-pill {
-  font-family: 'JetBrains Mono', monospace; font-size: .63rem; letter-spacing: .09em;
+  font-family: 'Syne', sans-serif; font-size: .63rem; letter-spacing: .09em;
   color: var(--slate); border: 1px solid rgba(91,122,157,.25); padding: .28rem .7rem; border-radius: 4px;
 }
 .pulse-dot {
@@ -75,11 +75,10 @@ nav {
   display: grid; grid-template-columns: 1fr 360px; gap: 4rem; align-items: center;
 }
 .h-kicker {
-  font-family: 'JetBrains Mono', monospace; font-size: .67rem; letter-spacing: .15em;
+  font-family: 'Syne', sans-serif; font-size: .67rem; letter-spacing: .15em;
   text-transform: uppercase; color: var(--cyan); margin-bottom: 1.8rem;
   display: flex; align-items: center; gap: .75rem;
 }
-.h-kicker::before { content:''; display:block; width:28px; height:1px; background:var(--cyan); }
 .h-title {
   font-family: 'Instrument Serif', serif;
   font-size: clamp(3rem, 5.5vw, 4.8rem); line-height: 1.05; color: #fff;
@@ -110,7 +109,7 @@ nav {
   background: linear-gradient(90deg, var(--cyan), var(--volt));
 }
 .panel-lbl {
-  font-family: 'JetBrains Mono', monospace; font-size: .61rem; letter-spacing: .12em;
+  font-family: 'Syne', sans-serif; font-size: .61rem; letter-spacing: .12em;
   text-transform: uppercase; color: var(--slate); margin-bottom: 1.1rem;
 }
 .stat-2 { display: grid; grid-template-columns: 1fr 1fr; gap: .85rem; margin-bottom: .85rem; }
@@ -125,7 +124,7 @@ nav {
   border-radius: 9px; padding: .95rem;
 }
 .term {
-  font-family: 'JetBrains Mono', monospace; font-size: .7rem; color: var(--slate);
+  font-family: 'Syne', sans-serif; font-size: .7rem; color: var(--slate);
   margin-top: 1.1rem; padding-top: 1.1rem; border-top: 1px solid var(--rim); line-height: 1.6;
 }
 .term .cc { color: var(--cyan); }
@@ -137,7 +136,7 @@ nav {
 .qwrap { width: 100%; max-width: 620px; margin: 0 auto; }
 .qhdr { display: flex; justify-content: space-between; margin-bottom: .55rem; }
 .qstep, .qpct {
-  font-family: 'JetBrains Mono', monospace; font-size: .66rem; letter-spacing: .1em;
+  font-family: 'Syne', sans-serif; font-size: .66rem; letter-spacing: .1em;
 }
 .qstep { color: var(--slate); }
 .qpct  { color: var(--cyan); }
@@ -155,7 +154,7 @@ nav {
   background: linear-gradient(90deg, transparent, var(--cyan), transparent);
 }
 .qnum {
-  font-family: 'JetBrains Mono', monospace; font-size: .63rem; letter-spacing: .15em;
+  font-family: 'Syne', sans-serif; font-size: .63rem; letter-spacing: .15em;
   text-transform: uppercase; color: var(--slate); margin-bottom: .9rem;
 }
 .qtxt { font-family: 'Instrument Serif', serif; font-size: 1.7rem; color: #fff; line-height: 1.25; margin-bottom: .45rem; }
@@ -212,7 +211,7 @@ nav {
 @keyframes spin { to { transform: rotate(360deg); } }
 .lc { position: absolute; inset: 22px; display: flex; align-items: center; justify-content: center; }
 .ltitle { font-family: 'Instrument Serif', serif; font-size: 1.75rem; color: #fff; margin-bottom: .45rem; }
-.lsub { font-family: 'JetBrains Mono', monospace; font-size: .72rem; color: var(--slate); letter-spacing: .06em; }
+.lsub { font-family: 'Syne', sans-serif; font-size: .72rem; color: var(--slate); letter-spacing: .06em; }
 .lsteps { margin-top: 2.4rem; display: flex; flex-direction: column; gap: .55rem; }
 .ls {
   display: flex; align-items: center; gap: .8rem;
@@ -222,14 +221,14 @@ nav {
 .ls.done { opacity: 1; border-color: rgba(12,242,208,.2); }
 .ldot { width: 6px; height: 6px; border-radius: 50%; background: var(--slate); flex-shrink: 0; transition: background .4s, box-shadow .4s; }
 .ls.done .ldot { background: var(--cyan); box-shadow: 0 0 8px var(--cyan); }
-.ltxt { font-family: 'JetBrains Mono', monospace; font-size: .71rem; color: var(--ghost); letter-spacing: .04em; }
+.ltxt { font-family: 'Syne', sans-serif; font-size: .71rem; color: var(--ghost); letter-spacing: .04em; }
 
 /* ====== RESULTS ====== */
 #screen-results { padding: 7rem 2.5rem 5rem; align-items: flex-start; }
 .rwrap { width: 100%; max-width: 980px; margin: 0 auto; }
 .rhdr { margin-bottom: 2.4rem; }
 .rkick {
-  font-family: 'JetBrains Mono', monospace; font-size: .63rem; letter-spacing: .15em;
+  font-family: 'Syne', sans-serif; font-size: .63rem; letter-spacing: .15em;
   text-transform: uppercase; color: var(--cyan); margin-bottom: .75rem;
   display: flex; align-items: center; gap: .55rem;
 }
@@ -256,7 +255,7 @@ nav {
 .gfill { fill: none; stroke: var(--cyan); stroke-width: 4; stroke-linecap: round; transition: stroke-dashoffset 1.5s cubic-bezier(.4,0,.2,1); }
 .glbl { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .gn { font-family: 'Instrument Serif', serif; font-size: 1.45rem; color: var(--cyan); line-height: 1; }
-.gu { font-family: 'JetBrains Mono', monospace; font-size: .58rem; color: var(--slate); margin-top: .1rem; }
+.gu { font-family: 'Syne', sans-serif; font-size: .58rem; color: var(--slate); margin-top: .1rem; }
 .sinfo { flex: 1; }
 .sinfo h3 { font-family: 'Instrument Serif', serif; font-size: 1.45rem; color: #fff; margin-bottom: .35rem; }
 .sinfo p { font-size: .85rem; color: var(--ghost); line-height: 1.65; }
@@ -265,7 +264,7 @@ nav {
   border-radius: 8px; padding: .55rem 1rem; flex-shrink: 0; text-align: center;
 }
 .stag .stn { font-family: 'Instrument Serif', serif; font-size: 1.55rem; color: var(--cyan); }
-.stag .stl { font-family: 'JetBrains Mono', monospace; font-size: .58rem; color: var(--slate); text-transform: uppercase; letter-spacing: .1em; }
+.stag .stl { font-family: 'Syne', sans-serif; font-size: .58rem; color: var(--slate); text-transform: uppercase; letter-spacing: .1em; }
 
 /* paths */
 .pgrid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-bottom: 1.7rem; }
@@ -276,15 +275,15 @@ nav {
 .pc.top { border-color: rgba(12,242,208,.22); }
 .pc:hover { transform: translateY(-4px); }
 .pcbar { position: absolute; top: 0; left: 0; right: 0; height: 2px; }
-.pcrank { font-family: 'JetBrains Mono', monospace; font-size: .6rem; letter-spacing: .12em; text-transform: uppercase; margin-bottom: .7rem; }
+.pcrank { font-family: 'Syne', sans-serif; font-size: .6rem; letter-spacing: .12em; text-transform: uppercase; margin-bottom: .7rem; }
 .pcname { font-family: 'Instrument Serif', serif; font-size: 1.18rem; color: #fff; margin-bottom: .22rem; }
 .pcpct { font-size: 1.75rem; font-weight: 700; line-height: 1; margin-bottom: .55rem; }
-.pczone { font-family: 'JetBrains Mono', monospace; font-size: .68rem; color: var(--slate); margin-bottom: .9rem; line-height: 1.5; }
+.pczone { font-family:  'Syne', sans-serif; font-size: .68rem; color: var(--slate); margin-bottom: .9rem; line-height: 1.5; }
 .pctags { display: flex; flex-wrap: wrap; gap: .35rem; }
-.pctag { font-family: 'JetBrains Mono', monospace; font-size: .6rem; padding: .18rem .5rem; border-radius: 3px; font-weight: 500; }
+.pctag { font-family: 'Syne', sans-serif; font-size: .6rem; padding: .18rem .5rem; border-radius: 3px; font-weight: 500; }
 
 /* journey */
-.slbl { font-family: 'JetBrains Mono', monospace; font-size: .63rem; letter-spacing: .15em; text-transform: uppercase; color: var(--slate); margin-bottom: .9rem; }
+.slbl { font-family: 'Syne', sans-serif; font-size: .63rem; letter-spacing: .15em; text-transform: uppercase; color: var(--slate); margin-bottom: .9rem; }
 .journey { display: grid; grid-template-columns: repeat(5,1fr); margin-bottom: 1.7rem; border: 1px solid var(--rim); border-radius: 11px; overflow: hidden; }
 .jstep { background: var(--panel); padding: 1.1rem .95rem; border-right: 1px solid var(--rim); }
 .jstep:last-child { border-right: none; }
@@ -322,7 +321,7 @@ nav {
   padding: .72rem 1.4rem; border-radius: 6px; cursor: none; transition: all .2s;
 }
 .bghost:hover { border-color: var(--ghost); color: var(--snow); }
-.ftag { margin-top: 2.4rem; text-align: center; font-family: 'JetBrains Mono', monospace; font-size: .63rem; color: var(--slate); letter-spacing: .08em; }
+.ftag { margin-top: 2.4rem; text-align: center; font-family: 'Syne', sans-serif; font-size: .63rem; color: var(--slate); letter-spacing: .08em; }
 .ftag b { color: var(--cyan); }
 
 /* fade-up */
@@ -354,7 +353,7 @@ nav {
     <span class="logo-name">Remnant<b>.</b></span>
   </a>
   <div class="nav-r">
-    <span class="nav-pill">CHALLENGE 01 / VIRTUAL FACTORY</span>
+    <span class="nav-pill">التحدي الأول | المصنع الافتراضي </span>
     <div class="pulse-dot"></div>
   </div>
 </nav>
@@ -363,14 +362,14 @@ nav {
 <section class="screen active" id="screen-hero">
   <div class="h-grid">
     <div>
-      <div class="h-kicker fu d1">Ministry of Industry and Mineral Resources - الابتكار المفتوح 2026</div>
+      <div class="h-kicker fu d1">وزارة الصناعة والثروة المعدنية | الابتكار المفتوح 2026</div>
       <h1 class="h-title fu d2">
         Find your <em>ideal</em><br>
         industrial<br>
         <span class="v">path.</span>
       </h1>
       <p class="h-body fu d3">
-        Answer five questions. Remnant's AI matches your profile to the right sector, zone, and incentives before a single form is filed.
+        Answer 5 questions. Remnant's AI matches your profile to the right sector, zone, and incentives before a single form is filed.
       </p>
       <button class="btn-go fu d4" onclick="startQuiz()">
         Start the Navigator
@@ -380,7 +379,7 @@ nav {
       </button>
     </div>
     <div class="h-panel fu d5">
-      <div class="panel-lbl">// platform.stats</div>
+      <div class="panel-lbl"> platform.stats</div>
       <div class="stat-2">
         <div class="sbox"><div class="sn c">200+</div><div class="sl">Industrial profiles in the scoring matrix</div></div>
         <div class="sbox"><div class="sn">34</div><div class="sl">Saudi industrial zones covered</div></div>
@@ -388,7 +387,7 @@ nav {
       <div class="swide"><div class="sn">5 min</div><div class="sl">To your personalized path report</div></div>
       <div class="term">
         <span class="cc">remnant</span>.navigator(<span class="vv">"investor_profile"</span>)<br>
-        <span class="cm">// returns optimal_sector, zone, incentives</span>
+        <span class="cm"> returns optimal_sector, zone, incentives</span>
       </div>
     </div>
   </div>
@@ -435,7 +434,7 @@ nav {
       </div>
     </div>
     <div class="ltitle">Analyzing your profile</div>
-    <div class="lsub">// running sector_match() across 200+ profiles</div>
+    <div class="lsub"> running sector_match() across 200+ profiles</div>
     <div class="lsteps">
       <div class="ls" id="ls1"><div class="ldot"></div><span class="ltxt">scoring sector compatibility matrix</span></div>
       <div class="ls" id="ls2"><div class="ldot"></div><span class="ltxt">mapping optimal industrial zones</span></div>
@@ -487,7 +486,7 @@ nav {
     <div class="pgrid fu d3" id="pgrid"></div>
 
     <div class="fu d4">
-      <div class="slbl">// your step-by-step journey</div>
+      <div class="slbl"> your step-by-step journey</div>
       <div class="journey">
         <div class="jstep"><div class="jn">01</div><div class="jtitle">Product Selection</div><div class="jdesc">Confirm your sector and product match from this report</div></div>
         <div class="jstep"><div class="jn">02</div><div class="jtitle">Zone Registration</div><div class="jdesc">Register on the industrial platform (Sina'ee)</div></div>
@@ -498,7 +497,7 @@ nav {
     </div>
 
     <div class="fu d5" style="margin-top:1.6rem">
-      <div class="slbl">// available incentives and support</div>
+      <div class="slbl"> available incentives and support</div>
       <div class="incgrid">
         <div class="incitem">
           <div class="incico">
@@ -544,7 +543,6 @@ nav {
         <p>Connect with Remnant's full platform to add predictive maintenance to your future facility. Know what is left. Act before it is gone.</p>
       </div>
       <div class="ctabtns">
-        <button class="bghost" onclick="goHome()">Start over</button>
         <button class="btn-go" onclick="goHome()" style="padding:.72rem 1.5rem">
           New analysis
           <svg class="arr" width="13" height="13" viewBox="0 0 16 16" fill="none">
@@ -623,7 +621,7 @@ function renderQ() {
   document.getElementById('qpct').textContent  = pct+'%';
   document.getElementById('bbk').style.visibility = step===0?'hidden':'visible';
   document.getElementById('qcard').innerHTML = `
-    <div class="qnum">// question_${String(step+1).padStart(2,'0')}</div>
+    <div class="qnum"> question ${String(step+1).padStart(2,'0')}</div>
     <div class="qtxt">${q.text}</div>
     <div class="qhint">${q.hint}</div>
     <div class="opts">
